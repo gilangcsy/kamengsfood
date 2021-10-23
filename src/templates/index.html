@@ -2,13 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Restaurant Apps Starter Project</title>
 </head>
 <body>
     <header>
         <nav>
-            <h1>Desktop MOde</h1>
-            <h2>Mobile mode</h2>
+            <div class="logoTextMobile">
+                KamengsFood
+            </div>
+            <div class="nav" id="nav">
+                <!-- <img class="logoNavbar" alt="" width="60"> -->
+                <div class="logoText">
+                    KamengsFood
+                </div>
+                <div class="logoTextMobileSidebar">
+                    KamengsFood
+                </div>
+                <ul>
+                    <li>
+                        <a class="active" href="#hero">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#arrival">FAVORITE</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#about">ABOUT US</a>
+                    </li>
+                </ul>
+            </div>
+
+            <aside id="sidebar">
+                <span id="navButtonOpen" style="font-size:30px;cursor:pointer">&#9776;</span>
+                <span id="navButtonClose" style="font-size:30px;cursor:pointer; color: #fff; display: none;"
+                    onclick="closeNav()">&#10005;</span>
+            </aside>
         </nav>
     </header>
     <!-- <h1>Restaurant Apps Starter Project</h1>
