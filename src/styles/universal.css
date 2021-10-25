@@ -46,7 +46,7 @@ article {
     position: absolute;
     top: -80px;
     left: 0;
-    background-color: var(--btn);
+    background-color: tomato;
     color: white;
     padding: 8px;
     z-index: 10;
