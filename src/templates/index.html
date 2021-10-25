@@ -2,21 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Restaurant Apps Starter Project</title>
 </head>
 <body>
-    <header>
+    <a href="#main-content" class="skip-link">Menuju ke konten</a>
+    <header class="jumbotron">
         <nav>
-            <h1>Desktop MOde</h1>
-            <h2>Mobile mode</h2>
+            <div class="logoTextMobile">
+                KamengsFood
+            </div>
+            <div class="nav" id="nav">
+                <div class="logoText">
+                    KamengsFood
+                </div>
+                <div class="logoTextMobileSidebar">
+                    KamengsFood
+                </div>
+                <ul>
+                    <li>
+                        <a class="active" href="/">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#">FAVORITE</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/gilangcsy/" target="_blank">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+
+            <aside id="sidebar">
+                <span id="navButtonOpen">&#9776;</span>
+                <span id="navButtonClose">&#10005;</span>
+            </aside>
         </nav>
     </header>
-    <!-- <h1>Restaurant Apps Starter Project</h1>
-    <p>Hallo coders! Anda berhasil menjalankan starter project.</p>
-    <p>Jangan lupa untuk menggunakan salah satu gambar yang berada pada ./images/heros sebagai background hero elemen</p>
-    <img src="./images/heros/hero-image_1.jpg" width="450" alt="">
-    <img src="./images/heros/hero-image_2.jpg" width="450" alt="">
-    <img src="./images/heros/hero-image_3.jpg" width="450" alt="">
-    <img src="./images/heros/hero-image_4.jpg" width="450" alt=""> -->
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <div class="header-text">
+                    KamengsFood
+                </div>
+                <p>
+                    The Best Indonesian Food Restaurant You've Ever Meet.
+                </p>
+
+                <div class="button">
+                    <button type="button">GET STARTED</button>
+                </div>
+            </div>
+        </section>
+        <article id="catalog">
+            <div class="row" id="main-content">
+                <div class="column">
+                    <div class="header-text">
+                        EXPLORE RESTAURANT
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="restaurants">
+            </div>
+        </article>
+    </main>
+    <footer id="footer">
+        <div class="row">
+            © 2021 KamengsFood. All Rights Reserved.
+        </div>
+    </footer>
+
 </body>
 </html>

@@ -1,8 +1,54 @@
-h1 {
-    display: block;
+#hero {
+    min-height: 600px;
+    text-align: center;
+    width: 100%;
+    background: url('./images/heros/hero-image_3.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+#hero {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#hero .hero-content {
+    margin: auto;
+    width: 90%;
+    color: white;
+    padding-top: 250px;
+}
+
+#hero .hero-content .header-text {
+    padding: 5px 0;
+    font-size: 36pt;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+#hero .hero-content span {
+    font-weight: 500;
+}
+
+#hero .hero-content p {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+    #hero .hero-content .header-text {
+        font-size: 24pt;
+    }
+}
+
 @media (max-width: 768px) {
-    h1 {
-        display: none;
+    #hero .hero-content p {
+        width: 100%;
+    }
+
+    #hero .hero-content h1 {
+        font-size: 36pt;
     }
 }
