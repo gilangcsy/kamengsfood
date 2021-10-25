@@ -1,0 +1,12 @@
+#footer {
+    background-color: #000;
+    height: auto;
+    color: white;
+    margin-top: 50px;
+}
+
+#footer .row {
+    margin: 0 auto;
+    padding: 40px 0px;
+    text-align: center;
+}

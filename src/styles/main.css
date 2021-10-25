@@ -1,8 +1,8 @@
-main {
+#hero {
     min-height: 600px;
     text-align: center;
     width: 100%;
-    background: url('./images/heros/hero-image_4.jpg') no-repeat;
+    background: url('./images/heros/hero-image_3.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

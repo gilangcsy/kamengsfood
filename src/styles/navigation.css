@@ -34,7 +34,7 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 .logoText {
