@@ -7,6 +7,7 @@ import '../styles/catalog.css';
 import '../styles/detail.css';
 import '../styles/footer.css';
 import './components/app-bar';
+import './components/my-header';
 import './components/my-footer';
 import swRegister from './utils/sw-register';
 import App from './views/app';
