@@ -32,7 +32,7 @@ class AppBar extends HTMLElement {
             </div>
 
             <aside id="sidebar">
-                <a id="hamburgerButton">&#9776;</a>
+                <a href="#" id="hamburgerButton">&#9776;</a>
             </aside>
         </nav>
     `;

@@ -1,8 +1,9 @@
+/* eslint-disable no-tabs */
 import CONFIG from '../../globals/config';
 
 const createRestaurantListTemplate = (restaurant) => `
-	<div class="column restaurant">
-		<a href="#/detail/${restaurant.id}">
+<div class="column restaurant">
+	<a href="#/detail/${restaurant.id}">
 			<img src="${CONFIG.BASE_IMAGE_URL_SM}${restaurant.pictureId}" width="100%" alt="${restaurant.name}">
 			<p class="catalog-title">${restaurant.name} - ${restaurant.city}</p>
 			<p class="catalog-truncate">${restaurant.description}</p>
@@ -109,8 +110,8 @@ const createLikedButtonTemplate = () => `
 `;
 
 export {
-	createRestaurantListTemplate,
-	createDetailRestaurantTemplate,
-	createLikeButtonTemplate,
-	createLikedButtonTemplate
+  createRestaurantListTemplate,
+  createDetailRestaurantTemplate,
+  createLikeButtonTemplate,
+  createLikedButtonTemplate,
 };

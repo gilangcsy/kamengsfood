@@ -26,5 +26,4 @@ const UrlParser = {
   },
 };
 
-  export default UrlParser;
-  
+export default UrlParser;

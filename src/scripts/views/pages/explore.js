@@ -1,11 +1,11 @@
-import RestaurantSource from "../../data/restaurant-source";
+/* eslint-disable no-tabs */
+import RestaurantSource from '../../data/restaurant-source';
 import { createRestaurantListTemplate } from '../templates/template-creator';
 
-let restaurantHTML = '';
 const Explore = {
-	async render() {
-		return `
-		<article id="catalog">
+  async render() {
+    return `
+        <article id="catalog">
             <div class="row"">
                 <div class="column">
                     <div class="header-text">
@@ -13,19 +13,19 @@ const Explore = {
                     </div>
                 </div>
             </div>
-			<div class="row" id="restaurants">
+            <div class="row" id="restaurants">
             </div>
         </article>
     `;
-	},
+  },
 
-	async afterRender() {
-		const data = await RestaurantSource.exploreRestaurants();
-		const restaurantContainer = document.querySelector('#restaurants');
-		data.forEach((resto) => {
-			restaurantContainer.innerHTML += createRestaurantListTemplate(resto);
-		});
-	},
+  async afterRender() {
+    const data = await RestaurantSource.exploreRestaurants();
+    const restaurantContainer = document.querySelector('#restaurants');
+    data.forEach((resto) => {
+      restaurantContainer.innerHTML += createRestaurantListTemplate(resto);
+    });
+  },
 };
 
 export default Explore;

@@ -1,11 +1,12 @@
+/* eslint-disable no-tabs */
 import FavoriteStoreIdb from '../../data/favorite-store-idb';
 import {
-	createRestaurantListTemplate
+  createRestaurantListTemplate,
 } from '../templates/template-creator';
 
 const Favorite = {
-	async render() {
-		return `
+  async render() {
+    return `
           <article id="catalog">
             <div class="row"">
                 <div class="column">
@@ -18,16 +19,16 @@ const Favorite = {
             </div>
         </article>
         `;
-	},
+  },
 
-	async afterRender() {
-		const stores = await FavoriteStoreIdb.getAllStores();
-		const restaurantContainer = document.querySelector('#restaurants');
+  async afterRender() {
+    const stores = await FavoriteStoreIdb.getAllStores();
+    const restaurantContainer = document.querySelector('#restaurants');
 
-		stores.forEach((store) => {
-			restaurantContainer.innerHTML += createRestaurantListTemplate(store);
-		});
-	},
+    stores.forEach((store) => {
+      restaurantContainer.innerHTML += createRestaurantListTemplate(store);
+    });
+  },
 };
 
 export default Favorite;
