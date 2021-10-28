@@ -3,76 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free movie catalogue for you">
+    <meta name="theme-color" content="#db0000" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
 
-    <title>Restaurant Apps Starter Project</title>
+    <title>KamengsFood v2</title>
+
+	<link rel="manifest" href="manifest.json">
+	<script src="https://use.fontawesome.com/b070c8f1df.js"></script>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Menuju ke konten</a>
-    <header class="jumbotron">
-        <nav>
-            <div class="logoTextMobile">
-                KamengsFood
-            </div>
-            <div class="nav" id="nav">
-                <div class="logoText">
-                    KamengsFood
-                </div>
-                <div class="logoTextMobileSidebar">
-                    KamengsFood
-                </div>
-                <ul>
-                    <li>
-                        <a class="active" href="/">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#">FAVORITE</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/gilangcsy/" rel="noopener" target="_blank">ABOUT</a>
-                    </li>
-                </ul>
-            </div>
+    <app-bar></app-bar>
+    <header id="hero">
+    	<div class="hero-content">
+    		<div class="header-text">
+    			KamengsFood
+    		</div>
+    		<p>
+    			The Best Indonesian Food Restaurant You've Ever Meet.
+    		</p>
 
-            <aside id="sidebar">
-                <a href="#" id="navButtonOpen">&#9776;</a>
-                <a href="#" id="navButtonClose">&#10005;</a>
-            </aside>
-        </nav>
+    		<div>
+    			<button type="button">GET STARTED</button>
+    		</div>
+    	</div>
     </header>
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <div class="header-text">
-                    KamengsFood
-                </div>
-                <p>
-                    The Best Indonesian Food Restaurant You've Ever Meet.
-                </p>
+    <main id="mainContent">
 
-                <div class="button">
-                    <button type="button">GET STARTED</button>
-                </div>
-            </div>
-        </section>
-        <article id="catalog">
-            <div class="row" id="main-content">
-                <div class="column">
-                    <div class="header-text">
-                        EXPLORE RESTAURANT
-                    </div>
-                </div>
-            </div>
-            <div class="row" id="restaurants">
-            </div>
-        </article>
     </main>
-    <footer id="footer">
-        <div class="row">
-            © 2021 KamengsFood. All Rights Reserved.
-        </div>
-    </footer>
+    <my-footer></my-footer>
 
 </body>
 </html>

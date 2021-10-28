@@ -15,30 +15,18 @@ a {
     color: #000;
 }
 
+#hamburgerButton {
+	background: white;
+	border-radius: 10px;
+}
+
 ul {
     padding: 0;
     list-style-type: none;
 }
 
-button {
-    background: #ff7b00;
-    border: none;
-    color: #ececec;
-    padding: 15px 40px;
-    border-radius: 5px;
-    margin-top: 28px;
-    cursor: pointer;
-    box-sizing: border-box;
-    font-weight: 700;
-}
-
-button:hover {
-    background: #c75015;
-    transition: all 0.5s;
-}
-
 article {
-    max-width: 1296px;
+    max-width: 1080px;
     margin: auto;
 }
 
@@ -54,6 +42,27 @@ article {
 
 .skip-link:focus {
     top: 0;
+}
+
+.like {
+	font-size: 18px;
+	position: fixed;
+	bottom: 16px;
+	right: 16px;
+	background-color: #ff7b00;
+	color: white;
+	border: 0;
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.like:hover {
+	background: #412810;
 }
 
 @media (max-width: 768px) {
