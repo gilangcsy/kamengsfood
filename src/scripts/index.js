@@ -26,3 +26,12 @@ window.addEventListener('load', () => {
   app.renderPage();
   swRegister();
 });
+
+function getfocus() {
+  document.getElementById('main-content').focus();
+}
+
+document.getElementById('skip-link').addEventListener('click', (event) => {
+  event.preventDefault();
+  getfocus();
+});
