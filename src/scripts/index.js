@@ -28,7 +28,7 @@ window.addEventListener('load', () => {
 });
 
 function getfocus() {
-  document.getElementById('main-content').focus();
+  document.getElementById('mainContent').focus();
 }
 
 document.getElementById('skip-link').addEventListener('click', (event) => {
