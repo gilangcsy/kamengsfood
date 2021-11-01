@@ -58,6 +58,7 @@ describe('Liking A Restaurant', () => {
     await LikeButtonPresenter.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
       detailRestaurant: {},
+      favoriteStore: FavoriteStoreIdb,
     });
 
     document.querySelector('#likeButton').dispatchEvent(new Event('click'));
