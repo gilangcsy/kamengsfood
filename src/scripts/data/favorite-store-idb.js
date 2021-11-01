@@ -19,12 +19,18 @@ const dbPromise = openDB(DATABASE_NAME, DATABASE_VERSION, {
 
 const FavoriteStoreIdb = {
   async getStore(id) {
+    if (!id) {
+      return;
+    }
     return (await dbPromise).get(OBJECT_STORE_NAME, id);
   },
   async getAllStores() {
     return (await dbPromise).getAll(OBJECT_STORE_NAME);
   },
   async putStore(store) {
+    if (!store.hasOwnProperty('id')) {
+      return;
+    }
     return (await dbPromise).put(OBJECT_STORE_NAME, store);
   },
   async deleteStore(id) {
