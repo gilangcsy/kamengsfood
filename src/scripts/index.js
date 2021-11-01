@@ -37,3 +37,7 @@ document.getElementById('skip-link').addEventListener('click', (event) => {
   event.preventDefault();
   getfocus();
 });
+
+document.getElementById('hamburgerButton').addEventListener('click', (event) => {
+  event.preventDefault();
+});

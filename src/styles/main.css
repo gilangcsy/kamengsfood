@@ -63,4 +63,8 @@
     #hero .hero-content h1 {
         font-size: 36pt;
     }
+
+	#hero {
+		background: url('./images/heros/hero-image_3_small.jpg') no-repeat;
+	}
 }
