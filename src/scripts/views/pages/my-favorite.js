@@ -15,7 +15,7 @@ const Favorite = {
                     </div>
                 </div>
             </div>
-			<div class="row" id="restaurants">
+			      <div class="row" id="restaurants">
             </div>
         </article>
         `;
@@ -24,6 +24,10 @@ const Favorite = {
   async afterRender() {
     const stores = await FavoriteStoreIdb.getAllStores();
     const restaurantContainer = document.querySelector('#restaurants');
+
+    if (stores.length === 0) {
+      restaurantContainer.innerHTML = 'You dont have any favorite restaurant yet';
+    }
 
     stores.forEach((store) => {
       restaurantContainer.innerHTML += createRestaurantListTemplate(store);
