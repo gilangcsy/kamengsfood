@@ -9,6 +9,8 @@ import '../styles/footer.css';
 import './components/app-bar';
 import './components/my-header';
 import './components/my-footer';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import swRegister from './utils/sw-register';
 import App from './views/app';
 
