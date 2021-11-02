@@ -1,3 +1,4 @@
+/* eslint-disable no-tabs */
 class AppBar extends HTMLElement {
   connectedCallback() {
     this.render();
@@ -9,6 +10,9 @@ class AppBar extends HTMLElement {
             <div class="logoTextMobile">
                 KamengsFood
             </div>
+			<aside id="sidebar">
+                <a href="#"aria-label="hamburger button" id="hamburgerButton">&#9776;</a>
+            </aside>
             <div class="nav" id="nav">
                 <div class="logoText">
                     KamengsFood
@@ -30,10 +34,6 @@ class AppBar extends HTMLElement {
                     </li>
                 </ul>
             </div>
-
-            <aside id="sidebar">
-                <a href="#"aria-label="hamburger button" id="hamburgerButton">&#9776;</a>
-            </aside>
         </nav>
     `;
   }

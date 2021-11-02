@@ -103,8 +103,7 @@ nav {
         visibility: hidden;
         transition: all 1s;
         position: absolute;
-        top: 0;
-        padding: 0px;
+        padding: 0;
     }
 
     .slide {
@@ -141,6 +140,7 @@ nav {
     .logoTextMobile {
         display: block;
         margin-left: 10px;
+		margin-bottom: 30px;
     }
 
     .logoTextMobileSidebar {
